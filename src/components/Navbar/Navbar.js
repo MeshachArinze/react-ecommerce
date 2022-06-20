@@ -5,9 +5,10 @@ import { Outlet, Link } from "react-router-dom";
 import { useRef } from "react"; 
 import { useGlobalContext } from "../../pages/Cart/Context";
 
+
 const Navbar = () => {
   const { amount } = useGlobalContext();
-
+  
   const [click, setClick] = useState(false);
   const handleClick = () => {
     setClick(!click);
@@ -22,16 +23,13 @@ const Navbar = () => {
       linksContainerRef.current.style.height = `${linksHeight}px`;
     }else {
       linksContainerRef.current.style.height = "12rem";
-    }
-
-
-    
+    } 
   }, [click]);
   return (
     <>
-      <div className="relative  w-full  p-4 md:container md:mx-auto">
+      <div className="relative w-full bg-lightCream py-4 ">
         <nav className="flex flex-col justify-betweeen md:flex-row md:justify-between">
-          <div className="flex md:flex-row md:justify-self-start">
+          <div className="flex justify-self-start text-bgZinc">
             <span className="text-rose text-md capitalize">Shop</span>
             <span className="capitalise">All</span>
           </div>
@@ -50,7 +48,7 @@ const Navbar = () => {
                     key={id}
                   >
                     <Link
-                      className=" text-md font-sans hover:text-orange"
+                      className=" text-md mr-4 font-sans text-bgZinc hover:text-lightOrange"
                       to={url}
                     >
                       {text}
@@ -60,14 +58,14 @@ const Navbar = () => {
               })}
             </ul>
           </div>
-          <div className=" flex absolute top-10 -translate-x-10 -translate-y-3 self-end">
+          <div className=" flex absolute top-10 -translate-x-20 -translate-y-3 self-end text-bgZinc  md:translate-x-20">
             {<FaBox className="text-orange" size="14" />}
-            <span className="absolute  text-base rounded-fill -top-4 left-2 inline-block">
+            <span className="absolute text-lightOrange text-base rounded-fill -top-4 left-2 inline-block">
               {amount}
             </span>
           </div>
           <div
-            className="absolute top-6 right-5 block md:hidden md:relative md:top-0 md:right-0"
+            className="absolute top-6 right-5 block md:hidden md:relative text-bgZinc md:top-0 md:right-0"
             onClick={handleClick}
           >
             {click ? <FaTimes size="20" /> : <FaBars size="20" />}
@@ -78,5 +76,6 @@ const Navbar = () => {
     </>
   );
 };
+
 
 export default Navbar;

@@ -1,12 +1,12 @@
 import React from 'react';
 import { useState } from 'react';
-import Loading from "./Product/Loading";
-import Collection from './Product/Collection';
-import Categories from "./Product/Category/Categories";
-import Menu from "./Product/Category/Menu";
+import Loading from "../Product/Loading/Loading";
+import Collection from './Collection/Collection';
+import Categories from "./Categories/Categories";
+import Menu from "./Menu/Menu";
 import { useEffect } from 'react';
-import { productItems } from '../Data';
-import { items } from "../Data"
+import { productItems } from '../../Data';
+import { items } from "../../Data"
 
 const allCategories = ["all", ...new Set(items.map((item) => item.category))];
 

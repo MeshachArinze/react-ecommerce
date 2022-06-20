@@ -8,7 +8,7 @@ const Item = (props) => {
     let {id,removeTour} = props;
   return (
     <>
-      <article className="h-full gap-[2.2rem] grid grid-cols-1 px-8 py-7">
+      <article className=" h-full gap-[2.2rem] grid grid-cols-1 md:grid-cols-2 px-8 py-7">
         <div>
           <img
             className="w-full object-cover block rounded"

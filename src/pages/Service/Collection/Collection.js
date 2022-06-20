@@ -1,5 +1,5 @@
 import React from 'react';
-import Item from './Item';
+import Item from '../Collection/Item/Item';
 
 const Collection = ({product, removeTour}) => {
     let products = product;

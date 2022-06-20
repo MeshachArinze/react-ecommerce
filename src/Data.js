@@ -35,8 +35,8 @@ const links = [
   },
   {
     id: 6,
-    url: "/map",
-    text: "Map",
+    url: "/cart",
+    text: "Cart",
   },
 ];
 

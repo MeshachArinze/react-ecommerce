@@ -12,13 +12,14 @@ import { useGlobalContext } from "./pages/Cart/Context";
 // const Blog = lazy(() => import("./components/pages/Blog"));
 
 import Navbar from "./components/Navbar/Navbar";
-import Footer from "./components/footer/footer";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Product from "./pages/Product";
-import Service from "./pages/Service";
-import Contact from "./pages/Contact";
-import Map from "./pages/Map";
+import Footer from "./components/footer/Footer";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import Product from "./pages/Product/Product";
+import Service from "./pages/Service/Service";
+import Contact from "./pages/Contact/Contact";
+import CartContainer from "./pages/Cart/CartContainer";
+
 
 const App = ({ children }) => {
   const { loading } = useGlobalContext();
@@ -39,8 +40,8 @@ const App = ({ children }) => {
         <Route path="/product" element={<Product />} />
         <Route path="/service" element={<Service />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/map" element={<Map />} />
-        {/* <Route path='/' element={<CartContainer />} /> */}
+        
+        <Route path='/cart' element={<CartContainer />} />
       </Routes>
       {/* <CartContainer /> */}
       <Footer />

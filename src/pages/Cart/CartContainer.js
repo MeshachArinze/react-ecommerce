@@ -27,43 +27,27 @@ const CartContainer = ({children}) => {
     )
   }
   return (
-    <section className='cart'>
+    <section className='cart flex flex-col bg-lightCream mx-auto justify-center'>
       {/* cart header */}
-      <header>
-        <h2>your bag</h2>
-      </header>
-      {/* cart items */}
       <div>
         {cart.map((item) => {
           return <CartItem key={item.id} item={item} />
         })}
       </div>
       {/* cart footer */}
-      <footer className='flex translate-y-20 justify-evenly items-center'>
+      <footer className='flex translate-y-20 mb-24 justify-evenly items-center'>
         <div className='cart-total'>
           <h4 className='text-lg uppercase'>
             total <span className='text-bold '>${total}</span>
           </h4>
         </div>
         <button
-          className='bg-orange text-lg text-gray-light rounded py-2 px-4'
+          className='bg-darkGreyBlack text-lightCream text-lg text-gray-light rounded py-1 px-4'
           onClick={clearCart}
         >
           clear cart
         </button>
       </footer>
-      {/* <div>
-      {list.map(item => {
-        return (
-          <>
-            <span name={item.name} onClick={handleRemoveItem}>
-              x
-            </span>
-            <span>{item.name}</span>
-          </>
-        );
-      })}
-    </div> */}
     </section>
 
   )

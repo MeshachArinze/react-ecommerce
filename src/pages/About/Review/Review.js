@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { dataImg } from "../../Data";
+import { dataImg } from "../../../Data";
 import { FaChevronLeft, FaChevronRight} from "react-icons/fa";
 
 const Review = () => {
@@ -18,14 +18,6 @@ const Review = () => {
 
       return number;
   }
-
-//   const randomNumber = () => {
-//       let randomValue = Math.floor(Math.random() * dataImg.length);
-//       if (randomValue === index) {
-//         randomValue = index + 1;
-//       }
-//       setIndex(checkNumber(randomNumber));
-//   }
 
   const nextButton = () => {
     setIndex((index) => {
@@ -64,11 +56,11 @@ const Review = () => {
             </button>
           </p>
         </div>
-        <div className="flex flex space-x-96 absolute top-48">
-          <button className="translate-x-4 text-priPink" onClick={prevButton}>
+        <div className="flex justify-between space-x-96 ">
+          <button className="flex bg-lightOrange p-3 justify-start translate-x-4 text-priPink" onClick={prevButton}>
             {<FaChevronLeft />}
           </button>
-          <button className="-translate-x-6 text-priPink" onClick={nextButton}>
+          <button className="justify-end bg-lightOrange p-3 -translate-x-6 text-priPink" onClick={nextButton}>
             {<FaChevronRight />}
           </button>
         </div>

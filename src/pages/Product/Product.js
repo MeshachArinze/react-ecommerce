@@ -1,27 +1,27 @@
 import React, { useState } from 'react';
 import { RadioGroup } from "@headlessui/react";
 import { FaStar } from "react-icons/fa";
-import bedwhite from "../interior/bedwhite.jpg";
-import layout from "../interior/layout.jpg";
-import bookset from "../interior/bookset.jpg";
-import wardrope from "../interior/wardrope.jpg";
+import bedwhite from "../../interior/bedwhite.jpg";
+import layout from "../../interior/layout.jpg";
+import bookset from "../../interior/bookset.jpg";
+import wardrope from "../../interior/wardrope.jpg";
 
 const product = {
-  name: "Basic Tee 6-Pack",
+  name: "bathroom",
   price: "$192",
   href: "#",
   breadcrumbs: [
-    { id: 1, name: "Men", href: "#" },
-    { id: 2, name: "Clothing", href: "#" },
+    { id: 1, name: "water closet", href: "#" },
+    { id: 2, name: "Bath hub", href: "#" },
   ],
   images: [
     {
       src: bedwhite,
-      alt: "Two each of gray, white, and black shirts laying flat.",
+      alt: "for your comfort",
     },
     {
       src: layout,
-      alt: "Model wearing plain black basic tee.",
+      alt: "fill comfortable with your layout.",
     },
     {
       src: bookset,
@@ -37,22 +37,22 @@ const product = {
     { name: "Gray", class: "bg-gray-200", selectedClass: "ring-gray-400" },
     { name: "Black", class: "bg-gray-900", selectedClass: "ring-gray-900" },
   ],
-  sizes: [
-    { name: "XXS", inStock: false },
-    { name: "XS", inStock: true },
-    { name: "S", inStock: true },
-    { name: "M", inStock: true },
-    { name: "L", inStock: true },
-    { name: "XL", inStock: true },
-    { name: "2XL", inStock: true },
-    { name: "3XL", inStock: true },
+  products: [
+    { name: "bed", inStock: false },
+    { name: "table", inStock: true },
+    { name: "lay", inStock: true },
+    { name: "set", inStock: true },
+    { name: "ward", inStock: true },
+    { name: "book", inStock: true },
+    { name: "long", inStock: true },
+    { name: "chair", inStock: true },
   ],
   description:
-    'The Basic Tee 6-Pack allows you to fully express your vibrant personality with three grayscale options. Feeling adventurous? Put on a heather gray tee. Want to be a trendsetter? Try our exclusive colorway: "Black". Need to add an extra pop of color to your outfit? Our white tee has you covered.',
+    'every product you see on this site was design by us. we make that some of are product come with discount. Every of our buyer can purchase what we sell. ',
   highlights: [
-    "Hand cut and sewn locally",
-    "Dyed with our proprietary colors",
-    "Pre-washed & pre-shrunk",
+    "four corner bed space",
+    "beautiful table set",
+    "Awesome design and layout",
     "Ultra-soft 100% cotton",
   ],
   details:
@@ -67,7 +67,7 @@ function classNames(...classes) {
 
 const Service = () => {
   const [selectedColor, setSelectedColor] = useState(product.colors[0]);
-  const [selectedSize, setSelectedSize] = useState(product.sizes[2]);
+  const [selectedSize, setSelectedSize] = useState(product.products[2]);
 
   return (
     <>
@@ -104,7 +104,7 @@ const Service = () => {
         </nav>
 
         {/* Image gallery */}
-        <div className="mt-6 max-w-2xl mx-auto sm:px-6 lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
+        <div className="relative mt-6 max-w-2xl mx-auto sm:px-6 lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
           <div className="hidden aspect-w-3 aspect-h-4 rounded-lg overflow-hidden lg:block">
             <img
               src={product.images[0].src}
@@ -134,6 +134,10 @@ const Service = () => {
               alt={product.images[3].alt}
               className="w-full h-full object-center object-cover"
             />
+          </div>
+          <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
+            <span className='left-0'>1</span>
+            <span className='right-0'>2</span>
           </div>
         </div>
 
@@ -220,7 +224,7 @@ const Service = () => {
                 <RadioGroup value={selectedSize} onChange={setSelectedSize} className="mt-4">
                   <RadioGroup.Label className="sr-only">Choose a size</RadioGroup.Label>
                   <div className="grid grid-cols-4 gap-4 sm:grid-cols-8 lg:grid-cols-4">
-                    {product.sizes.map((size) => (
+                    {product.products.map((size) => (
                       <RadioGroup.Option
                         key={size.name}
                         value={size}
@@ -274,7 +278,7 @@ const Service = () => {
                 type="submit"
                 className="mt-10 w-full bg-indigo-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
               >
-                Add to bag
+                Add to item
               </button>
             </form>
           </div>
