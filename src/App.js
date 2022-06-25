@@ -36,12 +36,11 @@ const App = ({ children }) => {
       <Routes>
         {/*  <Route path='/' element={}> */}
         <Route index element={<Home />} />
-        <Route path="/about" element={<About />} />
         <Route path="/product" element={<Product />} />
+        <Route path="/cart" element={<CartContainer />} />
         <Route path="/service" element={<Service />} />
+        <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        
-        <Route path='/cart' element={<CartContainer />} />
       </Routes>
       {/* <CartContainer /> */}
       <Footer />

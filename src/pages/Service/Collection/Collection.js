@@ -5,11 +5,7 @@ const Collection = ({product, removeTour}) => {
     let products = product;
 
   return (
-    <section className='translate-y-20'>
-      <div className="title flex flex-col items-center">
-        <h2>our Goods</h2>
-        <div className=""></div>
-      </div>
+    <section>
       <div>
         {products.map((item) => {
           const { id } = item;

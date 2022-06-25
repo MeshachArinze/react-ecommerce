@@ -4,7 +4,6 @@ import wardrope from "./interior/wardrope.jpg";
 import bookset from "./interior/bookset.jpg";
 import bedwhite from "./interior/bedwhite.jpg";
 import tableset from "./interior/tableset.jpg";
-import layout from "./interior/layout.jpg";
 import chairset from "./interior/chairset.jpg";
 
 const links = [
@@ -20,8 +19,8 @@ const links = [
   },
   {
     id: 3,
-    url: "/about",
-    text: "About",
+    url: "/cart",
+    text: "Cart",
   },
   {
     id: 4,
@@ -30,13 +29,13 @@ const links = [
   },
   {
     id: 5,
-    url: "/contact",
-    text: "Contact",
+    url: "/about",
+    text: "About",
   },
   {
     id: 6,
-    url: "/cart",
-    text: "Cart",
+    url: "/contact",
+    text: "Contact",
   },
 ];
 
@@ -134,7 +133,7 @@ export const productItems = [
     fields: {
       title: "bed white",
       price: 5.99,
-      text: "Staying in a comfortable home is necessary as an owner. it is important that you have a quality furniture in your apartment with a good warranty. That is why amari product is here to give you the best. we produce qualty chair with low cost. our material are imported from china, turkey, uk, usa, malasia. we dont sell only but we make our own product",
+      text: "Staying in a comfortable home is necessary as an owner. it is important that you have a quality furniture in your apartment with a good warranty. That is why amari product is here to give you the best. we produce qualty chair with low cost. our material are imported from china, turkey, uk, usa, malasia. we dont sell only but we make our own product. Staying in a comfortable home is necessary as an owner. it is important that you have a quality furniture in your apartment with a good warranty. That is why amari product is here to give you the best. we produce qualty chair with low cost. our material are imported from china, turkey, uk, usa, malasia. we dont sell only but we make our own product",
       image: {
         fields: {
           file: {
@@ -148,7 +147,7 @@ export const productItems = [
     id: 2,
     fields: {
       title: "bookset",
-      text: "Staying in a comfortable home is necessary as an owner. it is important that you have a quality furniture in your apartment with a good warranty. That is why amari product is here to give you the best. we produce qualty chair with low cost. our material are imported from china, turkey, uk, usa, malasia. we dont sell only but we make our own product",
+      text: "Staying in a comfortable home is necessary as an owner. it is important that you have a quality furniture in your apartment with a good warranty. That is why amari product is here to give you the best. we produce qualty chair with low cost. our material are imported from china, turkey, uk, usa, malasia. we dont sell only but we make our own product. Staying in a comfortable home is necessary as an owner. it is important that you have a quality furniture in your apartment with a good warranty. That is why amari product is here to give you the best. we produce qualty chair with low cost. our material are imported from china, turkey, uk, usa, malasia. we dont sell only but we make our own product",
       price: 7.99,
       image: {
         fields: {
@@ -163,7 +162,7 @@ export const productItems = [
     id: 3,
     fields: {
       title: "chairset",
-      text: "Staying in a comfortable home is necessary as an owner. it is important that you have a quality furniture in your apartment with a good warranty. That is why amari product is here to give you the best. we produce qualty chair with low cost. our material are imported from china, turkey, uk, usa, malasia. we dont sell only but we make our own product",
+      text: "Staying in a comfortable home is necessary as an owner. it is important that you have a quality furniture in your apartment with a good warranty. That is why amari product is here to give you the best. we produce qualty chair with low cost. our material are imported from china, turkey, uk, usa, malasia. we dont sell only but we make our own product. Staying in a comfortable home is necessary as an owner. it is important that you have a quality furniture in your apartment with a good warranty. That is why amari product is here to give you the best. we produce qualty chair with low cost. our material are imported from china, turkey, uk, usa, malasia. we dont sell only but we make our own product",
       price: 8.99,
       image: {
         fields: {
@@ -178,7 +177,7 @@ export const productItems = [
     id: 4,
     fields: {
       title: "wardrope",
-      text: "Staying in a comfortable home is necessary as an owner. it is important that you have a quality furniture in your apartment with a good warranty. That is why amari product is here to give you the best. we produce qualty chair with low cost. our material are imported from china, turkey, uk, usa, malasia. we dont sell only but we make our own product",
+      text: "Staying in a comfortable home is necessary as an owner. it is important that you have a quality furniture in your apartment with a good warranty. That is why amari product is here to give you the best. we produce qualty chair with low cost. our material are imported from china, turkey, uk, usa, malasia. we dont sell only but we make our own product. Staying in a comfortable home is necessary as an owner. it is important that you have a quality furniture in your apartment with a good warranty. That is why amari product is here to give you the best. we produce qualty chair with low cost. our material are imported from china, turkey, uk, usa, malasia. we dont sell only but we make our own product",
       price: 11.99,
 
       image: {
@@ -190,66 +189,66 @@ export const productItems = [
       },
     },
   },
-  {
-    id: 5,
-    fields: {
-      title: "longchair",
-      text: "Staying in a comfortable home is necessary as an owner. it is important that you have a quality furniture in your apartment with a good warranty. That is why amari product is here to give you the best. we produce qualty chair with low cost. our material are imported from china, turkey, uk, usa, malasia. we dont sell only but we make our own product",
-      price: 14.99,
-      image: {
-        fields: {
-          file: {
-            url: longhchair,
-          },
-        },
-      },
-    },
-  },
-  {
-    id: 6,
-    fields: {
-      title: "layout",
-      text: "Staying in a comfortable home is necessary as an owner. it is important that you have a quality furniture in your apartment with a good warranty. That is why amari product is here to give you the best. we produce qualty chair with low cost. our material are imported from china, turkey, uk, usa, malasia. we dont sell only but we make our own product",
-      price: 15.99,
-      image: {
-        fields: {
-          file: {
-            url: layout,
-          },
-        },
-      },
-    },
-  },
-  {
-    id: 7,
-    fields: {
-      title: "tableset",
-      text: "Staying in a comfortable home is necessary as an owner. it is important that you have a quality furniture in your apartment with a good warranty. That is why amari product is here to give you the best. we produce qualty chair with low cost. our material are imported from china, turkey, uk, usa, malasia. we dont sell only but we make our own product",
-      price: 9.99,
-      image: {
-        fields: {
-          file: {
-            url: tableset,
-          },
-        },
-      },
-    },
-  },
-  {
-    id: 8,
-    fields: {
-      title: "tvset",
-      text: "Staying in a comfortable home is necessary as an owner. it is important that you have a quality furniture in your apartment with a good warranty. That is why amari product is here to give you the best. we produce qualty chair with low cost. our material are imported from china, turkey, uk, usa, malasia. we dont sell only but we make our own product",
-      price: 12.99,
-      image: {
-        fields: {
-          file: {
-            url: tvset,
-          },
-        },
-      },
-    },
-  },
+  // {
+  //   id: 5,
+  //   fields: {
+  //     title: "longchair",
+  //     text: "Staying in a comfortable home is necessary as an owner. it is important that you have a quality furniture in your apartment with a good warranty. That is why amari product is here to give you the best. we produce qualty chair with low cost. our material are imported from china, turkey, uk, usa, malasia. we dont sell only but we make our own product. Staying in a comfortable home is necessary as an owner. it is important that you have a quality furniture in your apartment with a good warranty. That is why amari product is here to give you the best. we produce qualty chair with low cost. our material are imported from china, turkey, uk, usa, malasia. we dont sell only but we make our own product",
+  //     price: 14.99,
+  //     image: {
+  //       fields: {
+  //         file: {
+  //           url: longhchair,
+  //         },
+  //       },
+  //     },
+  //   },
+  // },
+  // {
+  //   id: 6,
+  //   fields: {
+  //     title: "layout",
+  //     text: "Staying in a comfortable home is necessary as an owner. it is important that you have a quality furniture in your apartment with a good warranty. That is why amari product is here to give you the best. we produce qualty chair with low cost. our material are imported from china, turkey, uk, usa, malasia. we dont sell only but we make our own product. Staying in a comfortable home is necessary as an owner. it is important that you have a quality furniture in your apartment with a good warranty. That is why amari product is here to give you the best. we produce qualty chair with low cost. our material are imported from china, turkey, uk, usa, malasia. we dont sell only but we make our own product",
+  //     price: 15.99,
+  //     image: {
+  //       fields: {
+  //         file: {
+  //           url: layout,
+  //         },
+  //       },
+  //     },
+  //   },
+  // },
+  // {
+  //   id: 7,
+  //   fields: {
+  //     title: "tableset",
+  //     text: "Staying in a comfortable home is necessary as an owner. it is important that you have a quality furniture in your apartment with a good warranty. That is why amari product is here to give you the best. we produce qualty chair with low cost. our material are imported from china, turkey, uk, usa, malasia. we dont sell only but we make our own product. Staying in a comfortable home is necessary as an owner. it is important that you have a quality furniture in your apartment with a good warranty. That is why amari product is here to give you the best. we produce qualty chair with low cost. our material are imported from china, turkey, uk, usa, malasia. we dont sell only but we make our own product",
+  //     price: 9.99,
+  //     image: {
+  //       fields: {
+  //         file: {
+  //           url: tableset,
+  //         },
+  //       },
+  //     },
+  //   },
+  // },
+  // {
+  //   id: 8,
+  //   fields: {
+  //     title: "tvset",
+  //     text: "Staying in a comfortable home is necessary as an owner. it is important that you have a quality furniture in your apartment with a good warranty. That is why amari product is here to give you the best. we produce qualty chair with low cost. our material are imported from china, turkey, uk, usa, malasia. we dont sell only but we make our own product. Staying in a comfortable home is necessary as an owner. it is important that you have a quality furniture in your apartment with a good warranty. That is why amari product is here to give you the best. we produce qualty chair with low cost. our material are imported from china, turkey, uk, usa, malasia. we dont sell only but we make our own product",
+  //     price: 12.99,
+  //     image: {
+  //       fields: {
+  //         file: {
+  //           url: tvset,
+  //         },
+  //       },
+  //     },
+  //   },
+  // },
 ];
 
 
@@ -321,20 +320,20 @@ export const items = [
     category: "table",
     desc: "That is why amari product is here to give you the best. we produce qualty chair with low cost. our material are imported from china, turkey, uk, usa, malasia",
   },
-  {
-    id: 5,
-    title: "chairset",
-    img: chairset,
-    price: 12.99,
-    category: "chair",
-    desc: "Staying in a comfortable home is necessary as an owner. it is important that you have a quality furniture in your apartment with a good warranty",
-  },
-  {
-    id: 6,
-    title: "longchair",
-    img: longhchair,
-    price: 14.99,
-    category: "long",
-    desc: "we also offer the best for all our clientStaying in a comfortable home is necessary as an owner",
-  },
+  // {
+  //   id: 5,
+  //   title: "chairset",
+  //   img: chairset,
+  //   price: 12.99,
+  //   category: "chair",
+  //   desc: "Staying in a comfortable home is necessary as an owner. it is important that you have a quality furniture in your apartment with a good warranty",
+  // },
+  // {
+  //   id: 6,
+  //   title: "longchair",
+  //   img: longhchair,
+  //   price: 14.99,
+  //   category: "long",
+  //   desc: "we also offer the best for all our clientStaying in a comfortable home is necessary as an owner",
+  // },
 ];

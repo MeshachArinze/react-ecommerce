@@ -35,20 +35,20 @@ const Navbar = () => {
           </div>
           <div
             className={`flex flex-col md:block md:flex-row md:justify-center md:h-0 ${
-              click ? "block" : "hidden"
+              click ? "block transition-all" : "hidden"
             }`}
             ref={linksContainerRef}
           >
-            <ul className="md:flex md:space-x-2 -translate-8" ref={linksRef}>
+            <ul className="md:flex md:space-x-2 translate-y-4 md:translate-y-0  transition" ref={linksRef}>
               {linked.map((link) => {
                 const { id, url, text } = link;
                 return (
                   <li
-                    className="text-center space-y-2 leading-8 md:space-x-8 md:leading-0"
+                    className="text-center space-y-2 leading-8 md:space-x-8 md:leading-0 md:bg-none"
                     key={id}
                   >
                     <Link
-                      className=" text-md mr-4 font-sans text-bgZinc hover:text-lightOrange"
+                      className=" text-md mr-4 font-sans text-darkGreyBlack hover:text-lightOrange"
                       to={url}
                     >
                       {text}

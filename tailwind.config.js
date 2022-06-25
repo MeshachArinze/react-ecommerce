@@ -4,6 +4,7 @@ module.exports = {
     "./src/pages/**/*.{js, jsx}",
     "./src/pages/HomeItem/**/*.{js, jsx}",
   ],
+  // mode: "jit",
   theme: {
     screens: {
       sm: "480px",
@@ -22,7 +23,7 @@ module.exports = {
         "[auto,auto,1fr]": "auto auto 1fr",
       },
       colors: {
-        lightOrange: "#ef9273",
+        lightOrange: "rgb(249 115 22)",
         darkBlue: "hsl(228,39%, 23%)",
         darkGreyBlack: "#000",
         lightCream: "#fef9f8",
@@ -30,9 +31,7 @@ module.exports = {
         bgBlue900: "rgb(30 58 138)",
         bgBlue800: "rgb(30 64 175)",
         bgBlue700: "rgb(29 78 216)",
-        bgPink: "rgb(131 24 67)",
-        bgFushia: "rgb(134 25 143)",
-        bgOrange: "gb(249 115 22)",
+        fushia: "rgb(134 25 143)",
       },
       fontsize: {
         xs: ".75rem",

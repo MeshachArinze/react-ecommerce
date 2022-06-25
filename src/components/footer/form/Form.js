@@ -30,25 +30,35 @@ const Form = () => {
   });
   return (
     <>
-      <form className="flex flex-col gap-4" onSubmit={setForm}>
-        <input
-          type="text"
-          name="fullName"
-          value={person.fullName}
-          onChange={handleChange}
-          ref={setRef}
-          placeholder="enter your own name"
-        />
-        <input
-          type="text"
-          name="email"
-          placeholder="Enter your email"
-          className="w-4/6 px-8 py-2  rounded border-none"
-          value={person.email}
-          onChange={handleChange}
-          ref={setRef}
-        />
-        <button className="bg-lightCream hover:bg-darkBlack cursor-pointer px-4 py-2 w-32 mx-auto rounded border-none bg-priPink text-lightGray">
+      <form
+        className="w-full flex flex-col items-center justify-center mb-10"
+        onSubmit={setForm}
+      >
+        <div className="flex flex-col items-center justify-center md:flex-row md:justify-between md:space-x-8">
+          <div className="w-full">
+            <input
+              type="text"
+              name="fullName"
+              value={person.fullName}
+              onChange={handleChange}
+              ref={setRef}
+              placeholder="enter your own name"
+              className=" w-full  px-8 py-2 mb-8 outline-none md:px-16"
+            />
+          </div>
+          <div className="w-full">
+            <input
+              type="text"
+              name="email"
+              placeholder="Enter your email"
+              className="w-full  px-8 py-2 rounded border-none mb-6 outline-none"
+              value={person.email}
+              onChange={handleChange}
+              ref={setRef}
+            />
+          </div>
+        </div>
+        <button className="bg-lightOrange text-lightCream  hover:bg-lightCream hover:text-darkGreyBlack cursor-pointer px-4 py-2 w-32 mx-auto rounded border-none bg-priPink text-lightGray">
           subscribe
         </button>
         {people.map((item) => {

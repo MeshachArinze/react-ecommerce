@@ -1,11 +1,12 @@
-import React from 'react';
-import bedwhite from '../../interior/bedwhite.jpg';
-import HomeItem from './HomeItem/HomeItem';
+import React from "react";
+import bedwhite from "../../interior/bedwhite.jpg";
+import HomeItem from "./HomeItem/HomeItem";
+import Princing from "./PrincingItem/Princing";
 
 const Home = () => {
   return (
     <>
-      <div className="relative bg-darkGreyBlack overflow-hidden">
+      <div className="relative bg-gradient-to-r from-darkGreyBlack to-darkBlue overflow-hidden">
         <div className="max-w-7xl mx-auto">
           <div className="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
             <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
@@ -37,7 +38,7 @@ const Home = () => {
             </main>
           </div>
         </div>
-        <div className="lg:absolute z-10 lg:inset-y-0 lg:right-0 lg:w-1/2">
+        <div className="bg- lg:absolute z-10 lg:inset-y-0 lg:right-0 lg:w-1/2">
           <img
             className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
             src={bedwhite}
@@ -46,8 +47,9 @@ const Home = () => {
         </div>
       </div>
       <HomeItem />
+      <Princing />
     </>
   );
-}
+};
 
-export default Home
+export default Home;

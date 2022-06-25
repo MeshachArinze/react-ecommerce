@@ -1,12 +1,11 @@
-import React from 'react';
-import { useState } from 'react';
+import React, {useState, useEffect} from "react";
 import Loading from "../Product/Loading/Loading";
-import Collection from './Collection/Collection';
+import Collection from "./Collection/Collection";
 import Categories from "./Categories/Categories";
 import Menu from "./Menu/Menu";
-import { useEffect } from 'react';
-import { productItems } from '../../Data';
-import { items } from "../../Data"
+import FirstPage from "./FirstPage/FirstPage";
+import { productItems } from "../../Data";
+import { items } from "../../Data";
 
 const allCategories = ["all", ...new Set(items.map((item) => item.category))];
 
@@ -24,15 +23,15 @@ const Product = () => {
     }
 
     const newItems = items.filter((i) => i.category === category);
-    setMenuItems(newItems)
-  }
+    setMenuItems(newItems);
+  };
 
   const removeTour = (id) => {
     const filterAll = product.filter((pro) => pro.id !== id);
     setProduct(filterAll);
-  }
+  };
 
-  const getTourItem =  () => {
+  const getTourItem = () => {
     setLoading(false);
 
     try {
@@ -46,46 +45,44 @@ const Product = () => {
       setCategories(allCategories);
     } catch (error) {
       setLoading(false);
-      console.log(error)
+      console.log(error);
     }
-  }
+  };
 
   useEffect(() => {
     getTourItem();
-  }, [])
+  }, []);
 
   if (loading) {
     return (
       <main>
         <Loading />
-        
       </main>
-    )
+    );
   }
 
   if (product.length === 0) {
-    return <main>
-      <div className='flex justify-center items-center'>
-        <h2>no product left</h2>
-      </div>
-      <section className=''>
-        <div className='title'>
-          <h2>our menu</h2>
+    return (
+      <main>
+        <div className="flex justify-center items-center">
+          <h2>no product left</h2>
         </div>
-      </section>
-    </main>
+        <section className="">
+          <div className="title">
+            <h2>our menu</h2>
+          </div>
+        </section>
+      </main>
+    );
   }
   return (
     <>
-      <div>
-        <Collection product={product} removeTour={removeTour} />
-        <Categories filterItem={filterItem} categories={categories}/>
-        <Menu items={menuItems} />
-      </div>
+      <FirstPage />
+      <Collection product={product} removeTour={removeTour} />
+      <Categories filterItem={filterItem} categories={categories} />
+      <Menu items={menuItems} />
     </>
   );
-}
-
-
+};
 
 export default Product;
