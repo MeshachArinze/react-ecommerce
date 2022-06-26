@@ -17,7 +17,6 @@ const Form = () => {
     const getRef = setRef.current.value;
     console.log(getRef);
     event.preventDefault();
-    console.log(event);
     if (person.email && person.fullName) {
       const newPerson = { ...person, id: new Date().getTime().toString() };
       setPeople([...people, newPerson]);
